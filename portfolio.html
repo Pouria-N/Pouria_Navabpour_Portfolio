@@ -3,217 +3,334 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/my-icon.ico" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="portfolio">
     <header>
-      <div class="container">
+      <div class="container header">
         <nav>
           <ul>
             <li class="menu-icon">
-              <img src="./images/menu_icon.png" alt="Menu icon" />
+              <img src="./images/icons/menu_icon.png" alt="Menu icon" />
             </li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><span>Portfolio</span></li>
+            <li class="horizontal"><a href="./index.html">Home</a></li>
+            <li class="horizontal"><a href="./about.html">About</a></li>
+            <li class="horizontal"><a href="./cv.html">Resume</a></li>
+            <li class="horizontal"><span>Portfolio</span></li>
           </ul>
+
+          <div class="wrapper">
+            <ul>
+              <li>
+                <button id="close-nav-menu">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7505 11.7495L35.2505 35.2495"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M35.2502 11.7502L11.7502 35.2502"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./cv.html">Resume</a>
+              <li><span>Portfolio</span></li>
+              <div class="contact">
+                <a
+                  href="tel:+393314112043"
+                  class="icon phone-icon"
+                  aria-label="Phone"
+                ></a>
+                <a
+                  href="mailto:pouria.navabpour@gmail.com"
+                  class="icon mail-icon"
+                  aria-label="Email"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/pouria-navabpour/"
+                  class="icon linkedin-icon"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                ></a>
+                <a
+                  href="https://github.com/Pouria-N"
+                  class="icon git-icon"
+                  target="_blank"
+                  aria-label="GitHub"
+                ></a>
+              </div>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
-    <section class="university">
-      <h2>UNIVERSITY PROJECTS</h2>
-      <hr />
+    <section id="projects" class="container projects-section">
+      <h2 class="bold portfolio">My Portfolio</h2>
+      <div class="projects-filter">
+        <input type="radio" checked="true" id="all" name="projects" />
+        <label for="all">
+          All
+          <span class="project-amount">3</span>
+        </label>
+        <input type="radio" id="academic" name="projects" />
+        <label for="academic">
+          Academic
+          <span class="project-amount">2</span>
+        </label>
+        <input type="radio" id="professional" name="projects" />
+        <label for="professional">
+          Professional
+          <span class="project-amount">1</span>
+        </label>
 
-      <div class="project-slider">
-        <div class="container">
-          <div class="project" onclick="location.href='./project-00.html'">
-            <a
-              class="download-btn"
-              href="./documents/Technological Ambivalence in Urban Dashboards and their Digital Governance.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-00.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>TECHNOLOGICAL AMBIVALENCE IN URBAN DASHBOARDS | 2024</h3>
-              <h4>Torino, italy</h4>
-            </div>
-          </div>
+        <span class="glider"></span>
+      </div>
 
-          <div class="project" onclick="location.href='./project-01.html'">
-            <a
-              class="download-btn"
-              href="./documents/Urban Regeneration.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-01.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Urban Regeneration | 2024</h3>
-              <h4>Borgo san paolo, Torino, italy</h4>
-            </div>
-          </div>
+      <div class="projects-area"></div>
+    </section>
 
-          <div class="project" onclick="location.href='./project-02.html'">
-            <a
-              class="download-btn"
-              href="./documents/Climate-Responsive Mixed-Use Development.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-02.jpg" alt="master design" />
-            </div>
-            <div class="project-info">
-              <h3>Climate-Responsive Mixed-Use Development | 2024</h3>
-              <h4>St. John District, Portland, OR</h4>
-            </div>
-          </div>
+    <section id="p00" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-00_Page_01.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_02.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_03.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_04.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_05.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_06.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_07.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_08.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_09.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_10.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_11.jpg" alt="master plan" />
+          <img src="./images/project-00_Page_12.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Technological Ambivalence in Urban Dashboards and their Digital Governance.pdf">
+          <button class="download"</button>download</button>
+        </a>
 
-          <div class="project" onclick="location.href='./project-03.html'">
-            <a
-              class="download-btn"
-              href="./documents/Exploring Venaria Reale - Unlocking Heritage-Led Urban Planning.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-03.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>
-                Exploring Venaria Reale: Unlocking Heritage-Led Urban Planning |
-                2023
-              </h3>
-              <h4>Venaria Reale, Torino, italy</h4>
-            </div>
-          </div>
+        <!-- Previous Button -->
+        <div class="prev arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="arrow-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
 
-          <div class="project" onclick="location.href='./project-04.html'">
-            <a
-              class="download-btn"
-              href="./documents/Enhancing Perviousness.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-04.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Enhancing Perviousness | 2023</h3>
-              <h4>Madonna di Campagna (Zone 16), Torino, italy</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-05.html'">
-            <a
-              class="download-btn"
-              href="./documents/Exploring Energy Challenges and Sustainability.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-05.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Exploring Energy Challenges and Sustainability | 2023</h3>
-              <h4>Corio, Torino, italy</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-06.html'">
-            <a
-              class="download-btn"
-              href="./documents/Trace of a Lost Path - Museum of Crafts.pdf"
-              download
-              >Download</a
-            >
-            <div class="project-image">
-              <img src="./images/project-06.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Trace of a Lost Path: Museum of Crafts | 2019</h3>
-              <h4>mashhad, iran</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-07.html'">
-            <div class="project-image">
-              <img src="./images/project-07.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Khorasan Cultural Center | 2018</h3>
-              <h4>tus, mashhad, iran</h4>
-            </div>
-          </div>
+        <!-- Next Button -->
+        <div class="next arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="arrow-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5L15.75 12l-7.5 7.5"
+            />
+          </svg>
         </div>
       </div>
     </section>
 
-    <div class="professional">
-      <h2>PROFESSIONAL PROJECTS</h2>
-      <hr />
+    <section id="p01" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-01_page-01.jpg" alt="master plan" />
+          <img src="./images/project-01_page-02.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Urban Regeneration.pdf">
+          <button class="download"</button>download</button>
+        </a>
 
-      <div class="project-slider">
-        <div class="container">
-          <div class="project" onclick="location.href='./project-08.html'">
-            <div class="project-image">
-              <img src="./images/project-08.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>fazelian house | 2022</h3>
-              <h4>Yazd, iran</h4>
-            </div>
-          </div>
+        <!-- Previous Button -->
+        <div class="prev arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="arrow-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
 
-          <div class="project" onclick="location.href='./project-09.html'">
-            <div class="project-image">
-              <img src="./images/project-09.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>Office building facade design | 2022</h3>
-              <h4>tabriz, Iran</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-10.html'">
-            <div class="project-image">
-              <img src="./images/project-10.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>villa | 2021</h3>
-              <h4>varzeghan, east azerbaijan, iran</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-11.html'">
-            <div class="project-image">
-              <img src="./images/project-11.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>small house renovation | 2020</h3>
-              <h4>tabriz, iran</h4>
-            </div>
-          </div>
-
-          <div class="project" onclick="location.href='./project-12.html'">
-            <div class="project-image">
-              <img src="./images/project-12.jpg" alt="master plan" />
-            </div>
-            <div class="project-info">
-              <h3>interior design | 2020</h3>
-              <h4>tabriz, iran</h4>
-            </div>
-          </div>
+        <!-- Next Button -->
+        <div class="next arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="arrow-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5L15.75 12l-7.5 7.5"
+            />
+          </svg>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="p02" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-02_page-01.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Climate-Responsive Mixed-Use Development.pdf">
+          <button class="download"</button>download</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="p03" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-03_page-01.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Exploring Venaria Reale - Unlocking Heritage-Led Urban Planning.pdf">
+          <button class="download"</button>download</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="p04" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-04_page-01.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Enhancing Perviousness.pdf">
+          <button class="download"</button>download</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="p05" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-05_page-01.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Exploring Energy Challenges and Sustainability.pdf">
+          <button class="download"</button>download</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="p06" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-06_page-01.jpg" alt="master plan" />
+        </div>
+        <a href="./documents/Trace of a Lost Path - Museum of Crafts.pdf">
+          <button class="download"</button>download</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="p07" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-07_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <section id="p08" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-08_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <section id="p09" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-09_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <section id="p10" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-10_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <section id="p11" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-11_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <section id="p12" class="modal hidden">
+      <div class="slider">
+        <button class="close">&times;</button>
+        <div class="slides">
+          <img src="./images/project-12_page-01.jpg" alt="master plan" />
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+<footer></footer>
+
+<script src="script.js"></script>
+    
   </body>
 </html>

@@ -3,28 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+    <title>My Resume</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/my-icon.ico" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="resume">
     <header>
-      <div class="container">
+      <div class="container header">
         <nav>
           <ul>
             <li class="menu-icon">
-              <img src="./images/menu_icon.png" alt="Menu icon" />
+              <img src="./images/icons/menu_icon.png" alt="Menu icon" />
             </li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><span>Resume</span></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="horizontal"><a href="./index.html">Home</a></li>
+            <li class="horizontal"><a href="./about.html">About</a></li>
+            <li class="horizontal"><span>Resume</span></li>
+            <li class="horizontal"><a href="./portfolio.html">Portfolio</a></li>
           </ul>
+
+          <div class="wrapper">
+            <ul>
+              <li>
+                <button id="close-nav-menu">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7505 11.7495L35.2505 35.2495"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M35.2502 11.7502L11.7502 35.2502"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><span>Resume</span></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <div class="contact">
+                <a
+                  href="tel:+393314112043"
+                  class="icon phone-icon"
+                  aria-label="Phone"
+                ></a>
+                <a
+                  href="mailto:pouria.navabpour@gmail.com"
+                  class="icon mail-icon"
+                  aria-label="Email"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/pouria-navabpour/"
+                  class="icon linkedin-icon"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                ></a>
+                <a
+                  href="https://github.com/Pouria-N"
+                  class="icon git-icon"
+                  target="_blank"
+                  aria-label="GitHub"
+                ></a>
+              </div>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
+
+    <h2 class="container bold cv">
+      My resume
+      <a
+        href="./documents/Pouria Navabpour_Resume 2025.pdf"
+        class="download"
+        target="_blank"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#c18d52"
+          width="30"
+          height="30"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+          />
+        </svg>
+      </a>
+    </h2>
     <section class="education">
       <div class="container">
-        <h2>Education</h2>
+        <h2 class="subtitle">Education</h2>
 
         <div class="glass">
           <h3>Politecnico di Torino</h3>
@@ -53,7 +134,7 @@
 
     <section class="experience">
       <div class="container">
-        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <h2 class="subtitle">PROFESSIONAL EXPERIENCE</h2>
 
         <div class="glass">
           <h3>
@@ -135,7 +216,7 @@
 
     <section class="language">
       <div class="container">
-        <h2>LANGUAGE SKILLS</h2>
+        <h2 class="subtitle">LANGUAGE SKILLS</h2>
 
         <div class="glass lang">
           <h3><strong>Persian</strong> Native</h3>
@@ -150,22 +231,45 @@
 
     <section class="hard-skills">
       <div class="container">
-        <h2>TECHNICAL SKILLS</h2>
+        <h2 class="subtitle">TECHNICAL SKILLS</h2>
         <div class="glass skills">
           <ul>
             <li><h3>GIS & CAD</h3></li>
-            <li>QGIS</li>
-            <li>AUTOCAD</li>
-            <li>REVIT ARCHITECTURE</li>
+            <li>
+              <img src="./images/icons/qgis.png" alt="icon" />
+              QGIS
+            </li>
+            <li>
+              <img src="./images/icons/auto-cad.png" alt="icon" /> AUTOCAD
+            </li>
+            <li><img src="./images/icons/revit.png" alt="icon" /> REVIT</li>
           </ul>
 
           <ul>
             <li><h3>VISUALIZATION & GRAPHICS</h3></li>
-            <li>3DS MAX</li>
-            <li>BLENDER</li>
-            <li>LUMION</li>
-            <li>PHOTOSHOP</li>
-            <li>FIGMA</li>
+            <li><img src="./images/icons/3ds-max.png" alt="icon" /> 3DS MAX</li>
+            <li>
+              <img
+                src="https://icongr.am/simple/blender.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              BLENDER
+            </li>
+            <li><img src="./images/icons/lumion.png" alt="icon" /> LUMION</li>
+            <li>
+              <img
+                src="https://icongr.am/simple/adobephotoshop.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              PHOTOSHOP
+            </li>
+            <li>
+              <img
+                src="https://icongr.am/simple/figma.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              FIGMA
+            </li>
           </ul>
 
           <ul>
@@ -174,16 +278,48 @@
                 PROGRAMMING <span class="in-progress">(in progress)</span>
               </h3>
             </li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <li>
+              <img
+                src="https://icongr.am/simple/html5.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              HTML
+            </li>
+            <li>
+              <img
+                src="https://icongr.am/simple/css3.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              CSS
+            </li>
+            <li>
+              <img
+                src="https://icongr.am/simple/javascript.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              JavaScript
+            </li>
           </ul>
 
           <ul>
             <li>
               <h3>PRODUCTIVITY TOOLS</h3>
             </li>
-            <li>MICROSOFT OFFICE SUITE (WORD, EXCEL, POWERPOINT)</li>
+            <li>
+              <img
+                src="https://icongr.am/simple/microsoftword.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              <img
+                src="https://icongr.am/simple/microsoftexcel.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              <img
+                src="https://icongr.am/simple/microsoftpowerpoint.svg?size=20&color=c18d52"
+                alt="icon"
+              />
+              MICROSOFT OFFICE SUITE (WORD, EXCEL, POWERPOINT)
+            </li>
           </ul>
         </div>
       </div>
@@ -191,7 +327,7 @@
 
     <section class="soft-skills">
       <div class="container">
-        <h2>CORE COMPETENCIES (SOFT SKILLS)</h2>
+        <h2 class="subtitle">SOFT SKILLS</h2>
         <div class="glass">
           <p>
             The ability of emotional intelligence, problem-solving, and
@@ -203,5 +339,9 @@
         </div>
       </div>
     </section>
+
+    <footer></footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

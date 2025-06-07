@@ -3,118 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/my-icon.ico" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="about">
     <header>
-      <div class="container">
+      <div class="container header">
         <nav>
           <ul>
             <li class="menu-icon">
-              <img src="./images/menu_icon.png" alt="Menu icon" />
+              <img src="./images/icons/menu_icon.png" alt="Menu icon" />
             </li>
-            <li><a href="./index.html">Home</a></li>
-            <li><span>About</span></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="horizontal"><a href="./index.html">Home</a></li>
+            <li class="horizontal"><span>About</span></li>
+            <li class="horizontal"><a href="./cv.html">Resume</a></li>
+            <li class="horizontal"><a href="./portfolio.html">Portfolio</a></li>
           </ul>
+
+          <div class="wrapper">
+            <ul>
+              <li>
+                <button id="close-nav-menu">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7505 11.7495L35.2505 35.2495"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M35.2502 11.7502L11.7502 35.2502"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><span>About</span></li>
+              <li><a href="./cv.html">Resume</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <div class="contact">
+                <a
+                  href="tel:+393314112043"
+                  class="icon phone-icon"
+                  aria-label="Phone"
+                ></a>
+                <a
+                  href="mailto:pouria.navabpour@gmail.com"
+                  class="icon mail-icon"
+                  aria-label="Email"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/pouria-navabpour/"
+                  class="icon linkedin-icon"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                ></a>
+                <a
+                  href="https://github.com/Pouria-N"
+                  class="icon git-icon"
+                  target="_blank"
+                  aria-label="GitHub"
+                ></a>
+              </div>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
     <section class="hero">
-      <div class="container about-me">
-        <h1 class="bold">About Me</h1>
-        <p class="my-story">
-          I'm a multidisciplinary designer and planner with a background in
-          architecture, urban and environmental planning, and a strong
-          foundation in visualization, CAD, and GIS. Skilled in 3D tools like
-          3Ds Max, Blender, Lumion, and Adobe Photoshop, I specialize in
-          creating detailed, functional, and visually compelling designs. Now
-          transitioning into
-          <span class="highlight">front-end web development</span>, I'm
-          expanding my skill set into the web world with a keen eye for
-          usability, layout, and detail.
+      <div class="container">
+        <div class="about-me">
+          <h2 class="bold about-me">About Me</h2>
+          <div class="wrapper">
+            <p class="my-story">
+              I'm a multidisciplinary designer and planner with a background in
+              architecture, urban and environmental planning, and a strong
+              foundation in visualization, CAD, and GIS. Skilled in 3D tools
+              like 3Ds Max, Blender, Lumion, and Adobe Photoshop, I specialize
+              in creating detailed, functional, and visually compelling designs.
+              Now transitioning into
+              <span class="highlight">front-end web development</span>, I'm
+              expanding my skill set into the web world with a keen eye for
+              usability, layout, and detail.
 
-          <span class="new-line"
-            >Since I can remember, I've been passionate about technology and
-            computers. Life, however, initially led me down the path of civil
-            engineering and later into architecture and planning. It was during
-            my master's degree at Politecnico di Torino that my path began to
-            realign with my early interests. Thanks to my tutor and life mentor,
-            <a href="https://full.polito.it/people/andrea-pollio/"
-              >Professor Andrea Pollio</a
-            >, I was introduced to the deeper connections between technology and
-            urbanism. His guidance not only shaped my academic direction but
-            also reawakened a part of me that had long been waiting to
-            resurface. My thesis on
-            <em>Technological Ambivalence in Urban Dashboards</em> was more than
-            an academic project; it was a turning point. Now, I’m committed to
-            fully embracing the world of technology, aligning my career with my
-            lifelong passion.</span
-          >
-        </p>
+              <span class="new-line"
+                >Since I can remember, I've been passionate about technology and
+                computers. Life, however, initially led me down the path of
+                civil engineering and later into architecture and planning. It
+                was during my master's degree at Politecnico di Torino that my
+                path began to realign with my early interests. Thanks to my
+                tutor and life mentor,
+                <a href="https://full.polito.it/people/andrea-pollio/"
+                  >Professor Andrea Pollio</a
+                >, I was introduced to the deeper connections between technology
+                and urbanism. His guidance not only shaped my academic direction
+                but also reawakened a part of me that had long been waiting to
+                resurface. My thesis on
+                <em>Technological Ambivalence in Urban Dashboards</em> was more
+                than an academic project; it was a turning point. Now, I’m
+                committed to fully embracing the world of technology, aligning
+                my career with my lifelong passion.</span
+              >
+            </p>
+            <div class="about-me-image">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="./images/about-background-576.JPG"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="./images/about-background-960.JPG"
+                />
+                <source
+                  media="(max-width: 1440px)"
+                  srcset="./images/about-background-1440.JPG"
+                />
+                <img src="./images/about-background.JPG" alt="My Picture" />
+              </picture>
+            </div>
+          </div>
 
-        <div class="learning">
-          <h2>
-            My Recent Learning Journey
-            <span class="in-progress">(in progress)</span>
-          </h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery"
-                target="_blank"
-              >
-                Complete Web & Mobile Designer (Zero to Mastery): UI/UX, Figma,
-                +more
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.udemy.com/course/get-started-with-html-css-the-frontend-developer-bootcamp"
-                target="_blank"
-              >
-                Complete Web Design: HTML, CSS, JavaScript, Vue, React, Git
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.udemy.com/course/the-complete-javascript-course/"
-                target="_blank"
-              >
-                The Complete JavaScript Course 2025: From Zero to Expert!
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.udemy.com/course/the-complete-guide-to-angular-2"
-                target="_blank"
-              >
-                Angular - The Complete Guide (2025 Edition)
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.udemy.com/course/the-ultimate-react-course"
-                target="_blank"
-              >
-                The Ultimate React Course 2025: React, Next.js, Redux & More
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="background">
+            <h3>Technical Background</h3>
+            <p>
+              Previously worked in architecture, technical documentation, and
+              visualization using tools like AutoCAD, QGIS, Photoshop, and 3Ds
+              Max. Now applying that design thinking to web development.
+            </p>
+          </div>
 
-        <div class="background">
-          <h2>Technical Background</h2>
-          <p>
-            Previously worked in architecture, technical documentation, and
-            visualization using tools like AutoCAD, QGIS, Photoshop, and 3Ds
-            Max. Now applying that design thinking to web development.
-          </p>
+          <div class="learning">
+            <h3>
+              My Recent Learning Journey
+              <span class="in-progress">(in progress)</span>
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery"
+                  target="_blank"
+                >
+                  Complete Web & Mobile Designer (Zero to Mastery): UI/UX,
+                  Figma, +more
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/get-started-with-html-css-the-frontend-developer-bootcamp"
+                  target="_blank"
+                >
+                  Complete Web Design: HTML, CSS, JavaScript, Vue, React, Git
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/the-complete-javascript-course/"
+                  target="_blank"
+                >
+                  The Complete JavaScript Course 2025: From Zero to Expert!
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/the-complete-guide-to-angular-2"
+                  target="_blank"
+                >
+                  Angular - The Complete Guide (2025 Edition)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/the-ultimate-react-course"
+                  target="_blank"
+                >
+                  The Ultimate React Course 2025: React, Next.js, Redux & More
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+    <footer></footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
