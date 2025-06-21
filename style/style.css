@@ -209,6 +209,7 @@ h2.about-me {
 h2.cv {
   text-align: left;
   margin-top: 80px;
+  padding: 0 20px;
 }
 h2.portfolio {
   text-align: left;
@@ -695,81 +696,20 @@ footer {
 }
 
 /* ####################################### */
-/* Styles for smaller Tablets */
+/* Styles for Tablets */
 /* ####################################### */
 
 @media screen and (max-width: 960px) and (orientation: portrait) {
   .container {
     height: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   /* Home */
-
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-  }
-  .buttons .btn {
-    width: 160px;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  /* Resume */
-
-  .glass.skills {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  .hard-skills ul li {
-    font-size: 14px;
-  }
-  .hard-skills ul li img {
-    width: 14px;
-    height: 14px;
-  }
-  .glass.lang {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .subtitle {
-    font-size: 26px;
-  }
-
-  /* Portfolio */
-
-  .projects-section .projects-filter label {
-    font-size: 16px;
-  }
-  .projects-section .projects-area {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .modal {
-    transform: translate(-50%, -50%) rotate(90deg);
-    width: 100vh;
-    height: 100vw;
-    margin: auto 18px;
-  }
-  .slider {
-    width: 92%;
-    max-width: 92%;
-  }
-  .slides img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-  }
-}
-
-/* ####################################### */
-/* Styles for smaller Cellphones */
-/* ####################################### */
-
-@media screen and (max-width: 576px) and (orientation: portrait) {
-  .container {
-    width: 92%;
-    max-width: 95%;
+  header.home {
+    background: transparent;
+    box-shadow: none;
   }
   header nav .wrapper {
     position: fixed;
@@ -818,6 +758,71 @@ footer {
     display: inline-block;
     cursor: pointer;
   }
+  .home-btn {
+    display: none;
+  }
+  .light {
+    margin-top: 40px;
+  }
+
+  /* Resume */
+
+  .glass.skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .hard-skills ul li {
+    font-size: 14px;
+  }
+  .hard-skills ul li img {
+    width: 14px;
+    height: 14px;
+  }
+  .glass.lang {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .subtitle {
+    font-size: 26px;
+  }
+  h2.cv {
+    padding: 0;
+  }
+
+  /* Portfolio */
+
+  .projects-section .projects-filter label {
+    font-size: 16px;
+  }
+  .projects-section .projects-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .modal {
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 100vh;
+    height: 100vw;
+    margin: auto 18px;
+  }
+  .slider {
+    width: 92%;
+    max-width: 92%;
+  }
+  .slides img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+/* ####################################### */
+/* Styles for Cellphones */
+/* ####################################### */
+
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .container {
+    width: 92%;
+    max-width: 95%;
+  }
 
   /*Home*/
 
@@ -829,7 +834,7 @@ footer {
     letter-spacing: 5px;
   }
   .title {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   /*About Me*/

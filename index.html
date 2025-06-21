@@ -12,21 +12,88 @@
     />
   </head>
   <body>
+    <header class="home">
+      <div class="container header">
+        <nav>
+          <ul>
+            <li class="menu-icon">
+              <img src="./images/icons/menu_icon.png" alt="Menu icon" />
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <ul>
+              <li>
+                <button id="close-nav-menu">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7505 11.7495L35.2505 35.2495"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M35.2502 11.7502L11.7502 35.2502"
+                      stroke="#c18d52"
+                      stroke-width="6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li><span>Home<span></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./cv.html">Resume</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <div class="contact">
+                <a
+                  href="tel:+393314112043"
+                  class="icon phone-icon"
+                  aria-label="Phone"
+                ></a>
+                <a
+                  href="mailto:pouria.navabpour@gmail.com"
+                  class="icon mail-icon"
+                  aria-label="Email"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/pouria-navabpour/"
+                  class="icon linkedin-icon"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                ></a>
+                <a
+                  href="https://github.com/Pouria-N"
+                  class="icon git-icon"
+                  target="_blank"
+                  aria-label="GitHub"
+                ></a>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <section class="hero">
       <div class="container home">
         <!-- Top Content -->
         <div class="hero-text">
-          <h1>
+          <h1 class="present">
             <span class="light">Pouria</span>
             <span class="bold">Navabpour</span>
             <span class="title"
               >Architect | Urbanist | Web designer and developer</span
             >
           </h1>
-          <div class="buttons">
+          <div class="buttons home-btn">
             <a href="./about.html" class="btn">About me</a>
             <a href="./cv.html" class="btn">Resume</a>
-            <a href="./portfolio.html" class="btn">Portfolio</a>
+            <a href="./portfolio.html" class="btn">Portfolio </a>
           </div>
         </div>
         <!-- Bottom Contact Icon -->
@@ -56,5 +123,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
